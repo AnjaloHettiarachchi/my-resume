@@ -212,3 +212,10 @@ a:hover {
 .cv-content-item-extra-alt-list li {
     line-height: 18px;
 }
+
+#cv-qr {
+    height: 150px;
+    opacity: 30%;
+    border: solid 1px #4F90CD;
+    border-radius: 10px;
+}
