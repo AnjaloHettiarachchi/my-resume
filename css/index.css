@@ -35,26 +35,26 @@ a:hover {
 }
 
 .cv-header-h1 {
-    font-size: 1.85em;
+    /* font-size: 1.85em; */
     font-weight: 500;
     line-height: initial;
     letter-spacing: -1px;
 }
 
 .cv-header-h3 {
-    font-size: 1.02em;
+    /* font-size: 1.02em; */
     font-weight: 400;
     color: #4E8FCC;
 }
 
 .cv-header-p {
-    font-size: 13.5px;
+    /* font-size: 13.5px; */
     margin-top: 16px;
     line-height: initial;
 }
 
 .cv-subheader {
-    font-size: 12px;
+    /* font-size: 12px; */
     background-color: rgb(44, 52, 63);
     color: rgb(255, 255, 255);
 }
@@ -81,14 +81,14 @@ a:hover {
 }
 
 #cv-img {
-    height: 139.5px;
-    width: 139.5px;
+    height: 185px;
+    width: 185px;
     border: .3em solid rgb(82, 148, 209);
 }
 
 .cv-content-section-header {
     /* letter-spacing: .1em; */
-    font-size: 21px;
+    /* font-size: 21px; */
     font-weight: 700;
     color: #4F90CD;
     text-decoration: underline;
@@ -100,32 +100,32 @@ a:hover {
 
 .cv-content-item-title {
     font-weight: 600;
-    font-size: 18px;
+    /* font-size: 18px; */
     margin-bottom: 0 !important;
 }
 
 .cv-content-item-subtitle {
-    font-size: 18px;
+    font-size: 21px !important;
     margin-bottom: 0 !important;
 }
 
 .cv-content-item-year,
 .cv-content-item-extra,
 .cv-content-item-location {
-    font-size: 12px;
+    /* font-size: 12px; */
     font-style: italic;
     color: #4F90CD;
 }
 
 .cv-content-item-extra-alt {
-    font-size: 13.5px;
+    /* font-size: 13.5px; */
     /* font-style: italic; */
     color: #4F90CD;
 }
 
 .cv-content-item-extra-alt::before {
     margin: 0 .3em 0 .3em;
-    font-size: 13.5px;
+    /* font-size: 13.5px; */
     content: "\2022";
 }
 
@@ -136,12 +136,12 @@ a:hover {
 .cv-external-link-icon {
     color: #4F90CD;
     margin-left: 5px;
-    font-size: .6em !important;
+    /* font-size: .6em !important; */
     vertical-align: middle;
 }
 
 .cv-content-item-list .cv-list-heading {
-    font-size: 12px;
+    /* font-size: 12px; */
     font-style: italic;
     color: #4F90CD;
 }
@@ -151,8 +151,8 @@ a:hover {
 }
 
 .cv-content-item-list ul li {
-    font-size: 13.5px;
-    line-height: 20px;
+    /* font-size: 13.5px; */
+    /* line-height: 20px; */
     display: block;
     list-style: none;
     margin: -.3em 0 0 1.1225em;
@@ -164,7 +164,7 @@ a:hover {
     color: #4F90CD;
     content: "\2022";
     display: inline-block;
-    font-size: 13.5px;
+    /* font-size: 13.5px; */
     font-weight: bolder;
     left: -1.1225em;
     position: absolute;
@@ -172,27 +172,27 @@ a:hover {
 }
 
 .cv-content-item-paragraph {
-    font-size: 12px;
-    line-height: 13.5px;
+    font-size: 16px;
+    /* line-height: 18.5px; */
 }
 
 .cv-content-item-contact .cv-contact-heading {
     display: block;
-    margin-bottom: -.5em;
+    /* margin-bottom: -.5em; */
     font-style: italic;
     color: #4F90CD;
 }
 
 .cv-content-item-contact {
     font-style: italic;
-    font-size: 12px;
+    /* font-size: 12px; */
 }
 
 .cv-content-skill {
     background-color: #4F90CD;
     color: #FFFFFF;
-    font-size: 13.5px !important;
-    line-height: 16.5px !important;
+    font-size: 18.5px !important;
+    line-height: 21.5px !important;
     font-weight: 500 !important;
     vertical-align: super !important;
     padding: .45em .6em !important;
@@ -202,13 +202,13 @@ a:hover {
 }
 
 .cv-content-item-extra-alt-list {
-    font-size: 13.5px;
+    /* font-size: 13.5px; */
     font-style: italic;
     list-style: none;
     padding-left: 0;
-    margin-bottom: .2em;
+    /* margin-bottom: .2em; */
 }
 
 .cv-content-item-extra-alt-list li {
-    line-height: 18px;
+    /* line-height: 18px; */
 }
