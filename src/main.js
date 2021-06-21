@@ -40,22 +40,29 @@ var pup = require("puppeteer");
 var fs_1 = require("fs");
 function printPDF() {
     return __awaiter(this, void 0, void 0, function () {
-        var browser, page, pdf;
+        var fetcher, rev, browser, page, pdf, e_1;
         return __generator(this, function (_a) {
             switch (_a.label) {
                 case 0:
                     console.log("Starting PDF Generation...");
-                    return [4 /*yield*/, pup.launch({ headless: true })];
+                    fetcher = pup.createBrowserFetcher();
+                    return [4 /*yield*/, fetcher.download("818858.")];
                 case 1:
-                    browser = _a.sent();
-                    return [4 /*yield*/, browser.newPage()];
-                case 2:
-                    page = _a.sent();
-                    return [4 /*yield*/, page
-                            .goto("http://127.0.0.1:5500", { waitUntil: "networkidle0" })["catch"](function (err) {
-                            console.error(err);
+                    rev = _a.sent();
+                    return [4 /*yield*/, pup.launch({
+                            headless: true,
+                            executablePath: rev.executablePath
                         })];
+                case 2:
+                    browser = _a.sent();
+                    _a.label = 3;
                 case 3:
+                    _a.trys.push([3, 7, 8, 10]);
+                    return [4 /*yield*/, browser.newPage()];
+                case 4:
+                    page = _a.sent();
+                    return [4 /*yield*/, page.goto("http://127.0.0.1:5500", { waitUntil: "networkidle0" })];
+                case 5:
                     _a.sent();
                     return [4 /*yield*/, page
                             .pdf({
@@ -71,15 +78,19 @@ function printPDF() {
                         })
                             .then(function () {
                             console.log("PDF generated successfully!");
-                        })["catch"](function (err) {
-                            console.error("Error occurred: " + err);
                         })];
-                case 4:
+                case 6:
                     pdf = _a.sent();
-                    return [4 /*yield*/, browser.close()];
-                case 5:
-                    _a.sent();
                     return [2 /*return*/, pdf];
+                case 7:
+                    e_1 = _a.sent();
+                    console.error(e_1);
+                    return [3 /*break*/, 10];
+                case 8: return [4 /*yield*/, browser.close()];
+                case 9:
+                    _a.sent();
+                    return [7 /*endfinally*/];
+                case 10: return [2 /*return*/];
             }
         });
     });
@@ -98,10 +109,7 @@ function main() {
                     })];
                 case 1:
                     _a.sent();
-                    return [4 /*yield*/, printPDF()];
-                case 2:
-                    _a.sent();
-                    return [2 /*return*/];
+                    return [2 /*return*/, printPDF()];
             }
         });
     });
